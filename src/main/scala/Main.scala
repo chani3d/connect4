@@ -49,6 +49,34 @@ object Main extends App {
   var row: Int = 0
   var column: Int = 0
   var player: String = "Player 1"
-  var ok: Boolean = false
+  var ok: Boolean = false // To avoid keyboard problems
+
+  val w: FunGraphics = new FunGraphics(700, 700, "Connect 4, 2024 by UK & SJCG - ISC")
+  var board: Array[Array[Int]] = Array.empty
+  var boardStatus: Boolean = false // Determines whether the board is empty or not
+  var started: Boolean = false
+  var interface: GUI = new GUI
+
+  interface.textTitle(w,player)
+  interface.textPressStart(w, 150, 400)
+
+  w.setKeyManager(new KeyAdapter()){
+    override def keyPressed(e: KeyEvent)
+    ok = true
+    if(e.getKeyChar == '1' && boardStatus) column = 0
+    else if (e.getKeyChar == '2' && boardStatus) column = 1
+    else if (e.getKeyChar == '3' && boardStatus) column = 2
+    else if (e.getKeyChar == '4' && boardStatus) column = 3
+    else if (e.getKeyChar == '5' && boardStatus) column = 4
+    else if (e.getKeyChar == '6' && boardStatus) column = 5
+    else if (e.getKeyChar == '7' && boardStatus) column = 6
+    else if (e.getKeyChar == 's' && !started) {
+      started = true
+      gameOver = false
+      board = interface.createBoard(r, c, w)
+
+  }
+
+ 
 
 }

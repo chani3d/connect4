@@ -1,3 +1,7 @@
+import hevs.graphics.FunGraphics
+import hevs.graphics.utils.GraphicsBitmap
+import java.awt.Color
+
 class GUI {
  
   def createBoard(r: Int, c: Int, w: FunGraphics): Array[Array[Int]] = {
@@ -19,7 +23,7 @@ class GUI {
     return board
   }
 
-  def dropPiece(board: Array[Array[Int]], row: Int, column: Int, piece: Int, posx: Int, posy: Int, color: Color, w: FunGraphics): Unit = {
+  def dropToken(board: Array[Array[Int]], row: Int, column: Int, piece: Int, posx: Int, posy: Int, color: Color, w: FunGraphics): Unit = {
     w.setColor(color)
     w.drawFilledCircle(posx, posy, 90)
     board(row)(column) = piece
@@ -79,6 +83,4 @@ class GUI {
     w.drawFancyString(110, 90, "Press > r < to restart the game", Color.black, 30)
 
   }
-}
-
 }

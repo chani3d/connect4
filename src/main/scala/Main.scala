@@ -1,3 +1,9 @@
+import hevs.graphics.FunGraphics
+import java.awt.Color
+import java.awt.event.{KeyAdapter, KeyEvent}
+
+
+
 object Main extends App {
 
   def checkPosition(board: Array[Array[Int]], c: Int): Boolean = {
@@ -24,7 +30,7 @@ object Main extends App {
 
     // Diagonal check (down > up)
     for(i <- 3 until r; j <- 0 until c - 3){
-      if(board(i)(j) == token && board(i - 1)(j + 1)) == token && 
+      if(board(i)(j) == token && board(i - 1)(j + 1) == token && 
       board(i - 2)(j + 2) == token && board(i - 3)(j + 3) == token) check = true
     }
 
@@ -74,9 +80,72 @@ object Main extends App {
       started = true
       gameOver = false
       board = interface.createBoard(r, c, w)
+      boardStatus = true
+      interface.textPlayer(w, player)
+      ok = false
+    }
+    else if(e.getKeyChar == 'r' && started){
+      turn = 0
+      gameOver = false
+      player = "Player 1"
+      board = interface.createBoard(r, c, w)
+      boardStatus = true
+      interface.textPlayer(w, player)
+      ok = false
+    }
+    else ok = false
 
+    // Start of the game
+    
+    if (ok && !gameOver){
+      if(turn % 2 == 0){
+        ok = false
+
+        // Player 1 turn
+        
+        if(checkPosition(board, column)){
+          row = nextPosition(board, column)
+          interface.dropToken(board, row, column, 1 (column * 100) + 5, (row * 100) + 105, Color.blue, w)
+          player = "Player 2"
+          interface.textPlayer(w, player)
+          interface.textTurn(w, turn)
+          interface.textPressRestart(w)
+
+          if(checkWin(board, 1, r, c)){
+            player = "Player 1"
+            interface.textWin(w, s"$player wins !")
+            gameOver = true
+          }
+        }
+      }
+      else if(turn == 41){
+        gameOver = true
+        interface.textTie(w)
+      }
+      else {
+        // Player 2 turn
+        ok = false
+
+        if(checkPosition(board, column)){
+          row = nextPosition(board, column)
+          interface.dropToken(board, row, column, 2, (column * 100) + 5, (row * 100) + 105, Color.red, w)
+          player = "Player 1"
+          interface.textPlayer(w, player)
+          interface.textTurn(w, turn)
+
+          if(checkWin(board, 2, r, c)){
+            player = "Player 2"
+            interface.textWin(w, s"$player wins !")
+            gameOver = true
+          }
+        }
+      }
+      if(!gameOver){
+        turn += 1
+      }
+    }
   }
 
  
 
-}
+})

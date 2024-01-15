@@ -2,15 +2,13 @@ import hevs.graphics.FunGraphics
 import java.awt.Color
 import java.awt.event.{KeyAdapter, KeyEvent}
 
-
-
 object Main extends App {
 
-  def checkPosition(board: Array[Array[Int]], c: Int): Boolean = {
+  def checkPosition(board: Array[Array[Int]], column: Int): Boolean = {
     return board(0)(column) == 0
   }
 
-  def nextPosition(board: Array[Array[Int]], c: Int): Int = {
+  def nextPosition(board: Array[Array[Int]], column: Int): Int = {
     var n: Int = 0
     
     for(i <- board.indices){
@@ -43,7 +41,7 @@ object Main extends App {
     //Vertical check
     for(i <- 0 until r - 3; j <- 0 until c) {
       if (board(i)(j) == token && board(i + 1)(j) == token && 
-      board(i + 2)(j) == token && board(i + 3)(j) == piece) check = true
+      board(i + 2)(j) == token && board(i + 3)(j) == token) check = true
     }
     return check
   }
@@ -66,86 +64,86 @@ object Main extends App {
   interface.textTitle(w,player)
   interface.textPressStart(w, 150, 400)
 
-  w.setKeyManager(new KeyAdapter()){
-    override def keyPressed(e: KeyEvent)
-    ok = true
-    if(e.getKeyChar == '1' && boardStatus) column = 0
-    else if (e.getKeyChar == '2' && boardStatus) column = 1
-    else if (e.getKeyChar == '3' && boardStatus) column = 2
-    else if (e.getKeyChar == '4' && boardStatus) column = 3
-    else if (e.getKeyChar == '5' && boardStatus) column = 4
-    else if (e.getKeyChar == '6' && boardStatus) column = 5
-    else if (e.getKeyChar == '7' && boardStatus) column = 6
-    else if (e.getKeyChar == 's' && !started) {
-      started = true
-      gameOver = false
-      board = interface.createBoard(r, c, w)
-      boardStatus = true
-      interface.textPlayer(w, player)
-      ok = false
-    }
-    else if(e.getKeyChar == 'r' && started){
-      turn = 0
-      gameOver = false
-      player = "Player 1"
-      board = interface.createBoard(r, c, w)
-      boardStatus = true
-      interface.textPlayer(w, player)
-      ok = false
-    }
-    else ok = false
+  // Keyboard control
 
-    // Start of the game
-    
-    if (ok && !gameOver){
-      if(turn % 2 == 0){
+  w.setKeyManager(new KeyAdapter(){
+    override def keyPressed(e: KeyEvent): Unit = {
+      ok = true
+      if(e.getKeyChar == '1' && boardStatus) column = 0
+      else if (e.getKeyChar == '2' && boardStatus) column = 1
+      else if (e.getKeyChar == '3' && boardStatus) column = 2
+      else if (e.getKeyChar == '4' && boardStatus) column = 3
+      else if (e.getKeyChar == '5' && boardStatus) column = 4
+      else if (e.getKeyChar == '6' && boardStatus) column = 5
+      else if (e.getKeyChar == '7' && boardStatus) column = 6
+      else if (e.getKeyChar == 's' && !started) {
+        started = true
+        gameOver = false
+        board = interface.createBoard(r, c, w)
+        boardStatus = true
+        interface.textPlayer(w, player)
         ok = false
-
-        // Player 1 turn
-        
-        if(checkPosition(board, column)){
-          row = nextPosition(board, column)
-          interface.dropToken(board, row, column, 1 (column * 100) + 5, (row * 100) + 105, Color.blue, w)
-          player = "Player 2"
-          interface.textPlayer(w, player)
-          interface.textTurn(w, turn)
-          interface.textPressRestart(w)
-
-          if(checkWin(board, 1, r, c)){
-            player = "Player 1"
-            interface.textWin(w, s"$player wins !")
-            gameOver = true
-          }
-        }
       }
-      else if(turn == 41){
-        gameOver = true
-        interface.textTie(w)
-      }
-      else {
-        // Player 2 turn
+      else if(e.getKeyChar == 'r' && started){
+        turn = 0
+        gameOver = false
+        player = "Player 1"
+        board = interface.createBoard(r, c, w)
+        boardStatus = true
+        interface.textPlayer(w, player)
         ok = false
+      }
+      else ok = false
 
-        if(checkPosition(board, column)){
-          row = nextPosition(board, column)
-          interface.dropToken(board, row, column, 2, (column * 100) + 5, (row * 100) + 105, Color.red, w)
-          player = "Player 1"
-          interface.textPlayer(w, player)
-          interface.textTurn(w, turn)
+      // Start of the game
+      
+      if (ok && !gameOver){
+        if(turn % 2 == 0){
+          ok = false
 
-          if(checkWin(board, 2, r, c)){
+          // Player 1 turn
+          
+          if(checkPosition(board, column)){
+            row = nextPosition(board, column)
+            interface.dropToken(board, row, column, 1, (column * 100) + 5, (row * 100) + 105, Color.yellow, w)
             player = "Player 2"
-            interface.textWin(w, s"$player wins !")
-            gameOver = true
+            interface.textPlayer(w, player)
+            interface.textTurn(w, turn)
+            interface.textPressRestart(w)
+
+            if(checkWin(board, 1, r, c)){
+              player = "Player 1"
+              interface.textWin(w, s"$player wins !")
+              gameOver = true
+            }
           }
         }
-      }
-      if(!gameOver){
-        turn += 1
+        else if(turn == 41){
+          gameOver = true
+          interface.textTie(w)
+        }
+        else {
+          // Player 2 turn
+          ok = false
+
+          if(checkPosition(board, column)){
+            row = nextPosition(board, column)
+            interface.dropToken(board, row, column, 2, (column * 100) + 5, (row * 100) + 105, Color.red, w)
+            player = "Player 1"
+            interface.textPlayer(w, player)
+            interface.textTurn(w, turn)
+
+            if(checkWin(board, 2, r, c)){
+              player = "Player 2"
+              interface.textWin(w, s"$player wins !")
+              gameOver = true
+            }
+          }
+        }
+        if(!gameOver){
+          turn += 1
+        }
       }
     }
-  }
-
- 
-
-})
+  })
+}

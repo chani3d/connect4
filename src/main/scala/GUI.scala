@@ -29,18 +29,18 @@ class GUI {
   //Text functions
 
   def textTitle(w: FunGraphics, player: String): Unit = {
-    // val hei_defr = new GraphicsBitmap("/res/images/hei-defr.png")
-    // val isc_icon = new GraphicsBitmap("/res/images/isc_icon.png")
+    val hei_defr = new GraphicsBitmap("/res/images/hei-defr.png")
+    val isc_icon = new GraphicsBitmap("/res/images/isc_icon.png")
 
     w.setColor(Color.white)
     w.drawFillRect(0, 0, 700, 700)
     w.drawFancyString(73, 325, "Connect 4", Color.gray, 110)
     w.drawFancyString(70, 330, "Connect 4", Color.black, 110)
     w.drawFancyString(90, 600, "2024 by Ü Külekçi & S.J. Cruz Go", Color.black, 30)
-    //w.drawFancyString(110, 670, "ISC 1 - HES-SO Valais-Wallis", Color.black, 30)
+    // w.drawFancyString(110, 670, "ISC 1 - HES-SO Valais-Wallis", Color.black, 30) // Replaced by pictures
 
-    // w.drawTransformedPicture(200, 650, 0, 0.7, isc_icon)
-    // w.drawTransformedPicture(450, 650, 0, 0.7, hei_defr)
+    w.drawTransformedPicture(200, 650, 0, 0.7, isc_icon)
+    w.drawTransformedPicture(450, 650, 0, 0.7, hei_defr)
   }
 
   def textPressStart(w: FunGraphics, posx: Int, posy: Int): Unit = {

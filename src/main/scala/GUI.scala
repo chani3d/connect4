@@ -36,7 +36,7 @@ class GUI {
     w.drawFillRect(0, 0, 700, 700)
     w.drawFancyString(73, 325, "Connect 4", Color.gray, 110)
     w.drawFancyString(70, 330, "Connect 4", Color.black, 110)
-    w.drawFancyString(170, 600, "2024 by Ü Külekçi & S.J. Cruz Go", Color.black, 30)
+    w.drawFancyString(90, 600, "2024 by Ü Külekçi & S.J. Cruz Go", Color.black, 30)
     //w.drawFancyString(110, 670, "ISC 1 - HES-SO Valais-Wallis", Color.black, 30)
 
     // w.drawTransformedPicture(200, 650, 0, 0.7, isc_icon)

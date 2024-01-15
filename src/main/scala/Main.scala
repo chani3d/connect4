@@ -62,6 +62,13 @@ object Main extends App {
   var started: Boolean = false
   var interface: GUI = new GUI
 
+  // Sund variables
+  val mainMusic: Audio = new Audio("/res/wav/Shostakovich _waltz2_8bit.wav")
+  val winEffect: Audio = new Audio("/res/wav/win.wav")
+  val tokenEffect: Audio = new Audio("/res/wav/token.wav")
+  val tokenEffect2: Audio = new Audio("/res/wav/token2.wav")
+
+  mainMusic.play()
   interface.textTitle(w,player)
   interface.textPressStart(w, 150, 400)
 
@@ -106,6 +113,7 @@ object Main extends App {
           
           if(checkPosition(board, column)){
             row = nextPosition(board, column)
+            tokenEffect.play()
             interface.dropToken(board, row, column, 1, (column * 100) + 5, (row * 100) + 105, Color.yellow, w)
             player = "Player 2"
             interface.textPlayer(w, player)
@@ -113,6 +121,7 @@ object Main extends App {
             interface.textPressRestart(w)
 
             if(checkWin(board, 1, r, c)){
+              winEffect.play()
               player = "Player 1"
               interface.textWin(w, s"$player wins !")
               gameOver = true
@@ -129,12 +138,14 @@ object Main extends App {
 
           if(checkPosition(board, column)){
             row = nextPosition(board, column)
+            tokenEffect2.play()
             interface.dropToken(board, row, column, 2, (column * 100) + 5, (row * 100) + 105, Color.red, w)
             player = "Player 1"
             interface.textPlayer(w, player)
             interface.textTurn(w, turn)
 
             if(checkWin(board, 2, r, c)){
+              winEffect.play()
               player = "Player 2"
               interface.textWin(w, s"$player wins !")
               gameOver = true

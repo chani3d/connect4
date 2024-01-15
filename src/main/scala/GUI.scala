@@ -5,6 +5,7 @@ import java.awt.Color
 class GUI {
  
   def createBoard(r: Int, c: Int, w: FunGraphics): Array[Array[Int]] = {
+
     //Visual stuff
     val board: Array[Array[Int]] = Array.ofDim[Int](r, c)
 
@@ -15,7 +16,7 @@ class GUI {
     w.drawFillRect(0, 100, 700, 600)
     for (i <- 0 to c; j <- 0 to r) {
       w.setColor(Color.white)
-      w.drawFilledCircle((i * 100) + 5, (j * 100) + 105, 90) 
+      w.drawFilledCircle((i * 100) + 5, (j * 100) + 105, 90)
     }
     return board
   }

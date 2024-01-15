@@ -1,1 +1,27 @@
-[0m[[0m[0mdebug[0m] [0m[0mJar uptodate: /Users/mackerel/Desktop/connect4/target/scala-3.3.1/connect4_3-0.1.0-SNAPSHOT.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mPackaging /Users/mackerel/Desktop/connect4/target/scala-3.3.1/connect4_3-0.1.0-SNAPSHOT.jar ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/mackerel/Desktop/connect4/target/scala-3.3.1/classes/Main$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	res[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/mackerel/Desktop/connect4/target/scala-3.3.1/classes/res[0m
+[0m[[0m[0mdebug[0m] [0m[0m	res/music[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/mackerel/Desktop/connect4/target/scala-3.3.1/classes/res/music[0m
+[0m[[0m[0mdebug[0m] [0m[0m	res/music/urss_cumbia.wav[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/mackerel/Desktop/connect4/target/scala-3.3.1/classes/res/music/urss_cumbia.wav[0m
+[0m[[0m[0mdebug[0m] [0m[0m	res/images[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/mackerel/Desktop/connect4/target/scala-3.3.1/classes/res/images[0m
+[0m[[0m[0mdebug[0m] [0m[0m	res/images/isc_icon.png[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/mackerel/Desktop/connect4/target/scala-3.3.1/classes/res/images/isc_icon.png[0m
+[0m[[0m[0mdebug[0m] [0m[0m	res/images/hei-defr.png[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/mackerel/Desktop/connect4/target/scala-3.3.1/classes/res/images/hei-defr.png[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GUI.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/mackerel/Desktop/connect4/target/scala-3.3.1/classes/GUI.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main$$anon$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/mackerel/Desktop/connect4/target/scala-3.3.1/classes/Main$$anon$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/mackerel/Desktop/connect4/target/scala-3.3.1/classes/Main.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/mackerel/Desktop/connect4/target/scala-3.3.1/classes/Main.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GUI.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/mackerel/Desktop/connect4/target/scala-3.3.1/classes/GUI.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0mDone packaging.[0m

@@ -10,9 +10,10 @@ object Main extends App {
 
   def nextPosition(board: Array[Array[Int]], column: Int): Int = {
     var n: Int = 0
-    
-    for(i <- board.indices){
-      if(board(i)(column) == 0) n = 1
+    for (i <- board.indices) {
+      if (board(i)(column) == 0) {
+        n = i
+      }
     }
     return n
   }

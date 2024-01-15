@@ -13,19 +13,17 @@ class GUI {
 
     w.setColor(Color.blue)
     w.drawFillRect(0, 100, 700, 600)
-    for (i <- 0 to c) {
-      for (j <- 0 to r) {
-        w.setColor(Color.white)
-        w.drawFilledCircle((i*100)+5, (j*100)+105, 90)
-      }
+    for (i <- 0 to c; j <- 0 to r) {
+      w.setColor(Color.white)
+      w.drawFilledCircle((i * 100) + 5, (j * 100) + 105, 90) 
     }
     return board
   }
 
-  def dropToken(board: Array[Array[Int]], row: Int, column: Int, piece: Int, posx: Int, posy: Int, color: Color, w: FunGraphics): Unit = {
+  def dropToken(board: Array[Array[Int]], row: Int, column: Int, token: Int, posx: Int, posy: Int, color: Color, w: FunGraphics): Unit = {
     w.setColor(color)
     w.drawFilledCircle(posx, posy, 90)
-    board(row)(column) = piece
+    board(row)(column) = token
   }
 
   //Text functions
@@ -38,7 +36,7 @@ class GUI {
     w.drawFillRect(0, 0, 700, 700)
     w.drawFancyString(73, 325, "Connect 4", Color.gray, 110)
     w.drawFancyString(70, 330, "Connect 4", Color.black, 110)
-    w.drawFancyString(170, 600, "2023 by S.J. Cruz Go", Color.black, 30)
+    w.drawFancyString(170, 600, "2024 by Ü Külekçi & S.J. Cruz Go", Color.black, 30)
     //w.drawFancyString(110, 670, "ISC 1 - HES-SO Valais-Wallis", Color.black, 30)
 
     // w.drawTransformedPicture(200, 650, 0, 0.7, isc_icon)

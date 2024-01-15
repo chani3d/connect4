@@ -1,5 +1,155 @@
-[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E008] Not Found Error: /Users/mackerel/Desktop/connect4/src/main/scala/GUI.scala:14:21 [0m[0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m14 |[0m    w.setColor(Color.darkBlue)[0m
-[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m               ^^^^^^^^^^^^^^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m   |[0m               value darkBlue is not a member of object java.awt.Color[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E040] Syntax Error: /Users/mackerel/Desktop/connect4/src/main/scala/Main.scala:151:0 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m151 |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m    |[0m^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m'}' expected, but eof found[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E007] Type Mismatch Error: /Users/mackerel/Desktop/connect4/src/main/scala/Main.scala:70:17 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m 70 |[0m  w.setKeyManager([33mnew[0m [35mKeyAdapter[0m(){[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m    |[0m  ^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m  Found:    Unit[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m  Required: Int[0m
+[0m[[0m[31merror[0m] [0m[0m[31m 71 |[0m    [33moverride[0m [33mdef[0m [36mkeyPressed[0m([36me[0m: [35mKeyEvent[0m): [35mUnit[0m = {[0m
+[0m[[0m[31merror[0m] [0m[0m[31m 72 |[0m      ok = [31mtrue[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m 73 |[0m      [33mif[0m(e.getKeyChar == [31m'1'[0m && boardStatus) column = [31m0[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m 74 |[0m      [33melse[0m [33mif[0m (e.getKeyChar == [31m'2'[0m && boardStatus) column = [31m1[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m 75 |[0m      [33melse[0m [33mif[0m (e.getKeyChar == [31m'3'[0m && boardStatus) column = [31m2[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m 76 |[0m      [33melse[0m [33mif[0m (e.getKeyChar == [31m'4'[0m && boardStatus) column = [31m3[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m 77 |[0m      [33melse[0m [33mif[0m (e.getKeyChar == [31m'5'[0m && boardStatus) column = [31m4[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m 78 |[0m      [33melse[0m [33mif[0m (e.getKeyChar == [31m'6'[0m && boardStatus) column = [31m5[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m 79 |[0m      [33melse[0m [33mif[0m (e.getKeyChar == [31m'7'[0m && boardStatus) column = [31m6[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m 80 |[0m      [33melse[0m [33mif[0m (e.getKeyChar == [31m's'[0m && !started) {[0m
+[0m[[0m[31merror[0m] [0m[0m[31m 81 |[0m        started = [31mtrue[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m 82 |[0m        gameOver = [31mfalse[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m 83 |[0m        board = interface.createBoard(r, c, w)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m 84 |[0m        boardStatus = [31mtrue[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m 85 |[0m        interface.textPlayer(w, player)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m 86 |[0m        ok = [31mfalse[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m 87 |[0m      }[0m
+[0m[[0m[31merror[0m] [0m[0m[31m 88 |[0m      [33melse[0m [33mif[0m(e.getKeyChar == [31m'r'[0m && started){[0m
+[0m[[0m[31merror[0m] [0m[0m[31m 89 |[0m        turn = [31m0[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m 90 |[0m        gameOver = [31mfalse[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m 91 |[0m        player = [31m"Player 1"[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m 92 |[0m        board = interface.createBoard(r, c, w)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m 93 |[0m        boardStatus = [31mtrue[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m 94 |[0m        interface.textPlayer(w, player)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m 95 |[0m        ok = [31mfalse[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m 96 |[0m      }[0m
+[0m[[0m[31merror[0m] [0m[0m[31m 97 |[0m      [33melse[0m ok = [31mfalse[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m 98 |[0m      [34m// Start of the game[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m 99 |[0m      [0m
+[0m[[0m[31merror[0m] [0m[0m[31m100 |[0m      [33mif[0m (ok && !gameOver){[0m
+[0m[[0m[31merror[0m] [0m[0m[31m101 |[0m        [33mif[0m(turn % [31m2[0m == [31m0[0m){[0m
+[0m[[0m[31merror[0m] [0m[0m[31m102 |[0m          ok = [31mfalse[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m103 |[0m          [34m// Player 1 turn[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m104 |[0m          [0m
+[0m[[0m[31merror[0m] [0m[0m[31m105 |[0m          [33mif[0m(checkPosition(board, column)){[0m
+[0m[[0m[31merror[0m] [0m[0m[31m106 |[0m            row = nextPosition(board, column)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m107 |[0m            interface.dropToken(board, row, column, [31m1[0m, (column * [31m100[0m) + [31m5[0m, (row * [31m100[0m) + [31m105[0m, Color.yellow, w)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m108 |[0m            player = [31m"Player 2"[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m109 |[0m            interface.textPlayer(w, player)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m110 |[0m            interface.textTurn(w, turn)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m111 |[0m            interface.textPressRestart(w)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m112 |[0m            [33mif[0m(checkWin(board, [31m1[0m, r, c)){[0m
+[0m[[0m[31merror[0m] [0m[0m[31m113 |[0m              player = [31m"Player 1"[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m114 |[0m              interface.textWin(w, [31ms"[0m$player[31m wins !"[0m)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m115 |[0m              gameOver = [31mtrue[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m116 |[0m            }[0m
+[0m[[0m[31merror[0m] [0m[0m[31m117 |[0m          }[0m
+[0m[[0m[31merror[0m] [0m[0m[31m118 |[0m        }[0m
+[0m[[0m[31merror[0m] [0m[0m[31m119 |[0m        [33melse[0m [33mif[0m(turn == [31m41[0m){[0m
+[0m[[0m[31merror[0m] [0m[0m[31m120 |[0m          gameOver = [31mtrue[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m121 |[0m          interface.textTie(w)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m122 |[0m        }[0m
+[0m[[0m[31merror[0m] [0m[0m[31m123 |[0m        [33melse[0m {[0m
+[0m[[0m[31merror[0m] [0m[0m[31m124 |[0m          [34m// Player 2 turn[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m125 |[0m          ok = [31mfalse[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m126 |[0m          [33mif[0m(checkPosition(board, column)){[0m
+[0m[[0m[31merror[0m] [0m[0m[31m127 |[0m            row = nextPosition(board, column)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m128 |[0m            interface.dropToken(board, row, column, [31m2[0m, (column * [31m100[0m) + [31m5[0m, (row * [31m100[0m) + [31m105[0m, Color.red, w)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m129 |[0m            player = [31m"Player 1"[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m130 |[0m            interface.textPlayer(w, player)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m131 |[0m            interface.textTurn(w, turn)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m132 |[0m            [33mif[0m(checkWin(board, [31m2[0m, r, c)){[0m
+[0m[[0m[31merror[0m] [0m[0m[31m133 |[0m              player = [31m"Player 2"[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m134 |[0m              interface.textWin(w, [31ms"[0m$player[31m wins !"[0m)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m135 |[0m              gameOver = [31mtrue[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m136 |[0m            }[0m
+[0m[[0m[31merror[0m] [0m[0m[31m137 |[0m          }[0m
+[0m[[0m[31merror[0m] [0m[0m[31m138 |[0m        }[0m
+[0m[[0m[31merror[0m] [0m[0m[31m139 |[0m        [33mif[0m(!gameOver){[0m
+[0m[[0m[31merror[0m] [0m[0m[31m140 |[0m          turn += [31m1[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m141 |[0m        }[0m
+[0m[[0m[31merror[0m] [0m[0m[31m142 |[0m      }[0m
+[0m[[0m[31merror[0m] [0m[0m[31m143 |[0m    }[0m
+[0m[[0m[31merror[0m] [0m[0m[31m144 |[0m  })[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- Warning: /Users/mackerel/Desktop/connect4/src/main/scala/Main.scala:18:4 ----[0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m18 |[0m    [33mreturn[0m n[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m   |[0m    ^[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m    Line is indented too far to the left, or a `}` is missing[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- Warning: /Users/mackerel/Desktop/connect4/src/main/scala/Main.scala:21:2 ----[0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m21 |[0m  [33mdef[0m [36mcheckWin[0m([36mboard[0m: [35mArray[0m[[35mArray[0m[[35mInt[0m]], [36mtoken[0m: [35mInt[0m, [36mr[0m: [35mInt[0m, [36mc[0m: [35mInt[0m): [35mBoolean[0m = {[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m   |[0m  ^[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m  Line is indented too far to the left, or a `}` is missing[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- Warning: /Users/mackerel/Desktop/connect4/src/main/scala/Main.scala:50:2 ----[0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m50 |[0m  [33mval[0m [36mr[0m: [35mInt[0m = [31m6[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m   |[0m  ^[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m  Line is indented too far to the left, or a `}` is missing[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- Warning: /Users/mackerel/Desktop/connect4/src/main/scala/Main.scala:51:2 ----[0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m51 |[0m  [33mval[0m [36mc[0m: [35mInt[0m = [31m7[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m   |[0m  ^[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m  Line is indented too far to the left, or a `}` is missing[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- Warning: /Users/mackerel/Desktop/connect4/src/main/scala/Main.scala:52:2 ----[0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m52 |[0m  [33mvar[0m [36mgameOver[0m: [35mBoolean[0m = [31mfalse[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m   |[0m  ^[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m  Line is indented too far to the left, or a `}` is missing[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- Warning: /Users/mackerel/Desktop/connect4/src/main/scala/Main.scala:53:2 ----[0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m53 |[0m  [33mvar[0m [36mturn[0m: [35mInt[0m = [31m0[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m   |[0m  ^[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m  Line is indented too far to the left, or a `}` is missing[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- Warning: /Users/mackerel/Desktop/connect4/src/main/scala/Main.scala:54:2 ----[0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m54 |[0m  [33mvar[0m [36mrow[0m: [35mInt[0m = [31m0[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m   |[0m  ^[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m  Line is indented too far to the left, or a `}` is missing[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- Warning: /Users/mackerel/Desktop/connect4/src/main/scala/Main.scala:55:2 ----[0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m55 |[0m  [33mvar[0m [36mcolumn[0m: [35mInt[0m = [31m0[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m   |[0m  ^[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m  Line is indented too far to the left, or a `}` is missing[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- Warning: /Users/mackerel/Desktop/connect4/src/main/scala/Main.scala:56:2 ----[0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m56 |[0m  [33mvar[0m [36mplayer[0m: [35mString[0m = [31m"Player 1"[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m   |[0m  ^[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m  Line is indented too far to the left, or a `}` is missing[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- Warning: /Users/mackerel/Desktop/connect4/src/main/scala/Main.scala:57:2 ----[0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m57 |[0m  [33mvar[0m [36mok[0m: [35mBoolean[0m = [31mfalse[0m [34m// To avoid keyboard problems[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m   |[0m  ^[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m  Line is indented too far to the left, or a `}` is missing[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- Warning: /Users/mackerel/Desktop/connect4/src/main/scala/Main.scala:59:2 ----[0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m59 |[0m  [33mval[0m [36mw[0m: [35mFunGraphics[0m = [33mnew[0m [35mFunGraphics[0m([31m700[0m, [31m700[0m, [31m"Connect 4, 2024 by UK & SJCG - ISC"[0m)[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m   |[0m  ^[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m  Line is indented too far to the left, or a `}` is missing[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- Warning: /Users/mackerel/Desktop/connect4/src/main/scala/Main.scala:60:2 ----[0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m60 |[0m  [33mvar[0m [36mboard[0m: [35mArray[0m[[35mArray[0m[[35mInt[0m]] = Array.empty[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m   |[0m  ^[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m  Line is indented too far to the left, or a `}` is missing[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- Warning: /Users/mackerel/Desktop/connect4/src/main/scala/Main.scala:61:2 ----[0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m61 |[0m  [33mvar[0m [36mboardStatus[0m: [35mBoolean[0m = [31mfalse[0m [34m// Determines whether the board is empty or not[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m   |[0m  ^[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m  Line is indented too far to the left, or a `}` is missing[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- Warning: /Users/mackerel/Desktop/connect4/src/main/scala/Main.scala:62:2 ----[0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m62 |[0m  [33mvar[0m [36mstarted[0m: [35mBoolean[0m = [31mfalse[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m   |[0m  ^[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m  Line is indented too far to the left, or a `}` is missing[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- Warning: /Users/mackerel/Desktop/connect4/src/main/scala/Main.scala:63:2 ----[0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m63 |[0m  [33mvar[0m [36minterface[0m: [35mGUI[0m = [33mnew[0m [35mGUI[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m   |[0m  ^[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m  Line is indented too far to the left, or a `}` is missing[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- Warning: /Users/mackerel/Desktop/connect4/src/main/scala/Main.scala:65:2 ----[0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m65 |[0m  interface.textTitle(w,player)[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m   |[0m  ^[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m  Line is indented too far to the left, or a `}` is missing[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- Warning: /Users/mackerel/Desktop/connect4/src/main/scala/Main.scala:66:2 ----[0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m66 |[0m  interface.textPressStart(w, [31m150[0m, [31m400[0m)[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m   |[0m  ^[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m  Line is indented too far to the left, or a `}` is missing[0m
+[0m[[0m[33mwarn[0m] [0m[0m17 warnings found[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m

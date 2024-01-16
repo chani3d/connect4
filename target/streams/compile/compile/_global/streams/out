@@ -1,7 +1,0 @@
-[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E006] Not Found Error: /Users/mackerel/Desktop/connect4/src/main/scala/Main.scala:67:6 [0m[0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m67 |[0m      display.setPixel(t, b, [33mnew[0m [35mColor[0m(t, [31m0[0m, b))[0m
-[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m      ^^^^^^^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m   |[0m      Not found: display[0m
-[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m

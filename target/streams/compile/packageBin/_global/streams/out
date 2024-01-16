@@ -1,0 +1,41 @@
+[0m[[0m[0mdebug[0m] [0m[0mPackaging /Users/mackerel/Desktop/connect4/target/scala-3.3.1/connect4_3-0.1.0-SNAPSHOT.jar ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/mackerel/Desktop/connect4/target/scala-3.3.1/classes/Main$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	res[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/mackerel/Desktop/connect4/target/scala-3.3.1/classes/res[0m
+[0m[[0m[0mdebug[0m] [0m[0m	res/wav[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/mackerel/Desktop/connect4/target/scala-3.3.1/classes/res/wav[0m
+[0m[[0m[0mdebug[0m] [0m[0m	res/wav/win.wav[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/mackerel/Desktop/connect4/target/scala-3.3.1/classes/res/wav/win.wav[0m
+[0m[[0m[0mdebug[0m] [0m[0m	res/wav/urss_cumbia.wav[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/mackerel/Desktop/connect4/target/scala-3.3.1/classes/res/wav/urss_cumbia.wav[0m
+[0m[[0m[0mdebug[0m] [0m[0m	res/wav/token.wav[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/mackerel/Desktop/connect4/target/scala-3.3.1/classes/res/wav/token.wav[0m
+[0m[[0m[0mdebug[0m] [0m[0m	res/wav/token2.wav[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/mackerel/Desktop/connect4/target/scala-3.3.1/classes/res/wav/token2.wav[0m
+[0m[[0m[0mdebug[0m] [0m[0m	res/wav/Shostakovich _waltz2_8bit.wav[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/mackerel/Desktop/connect4/target/scala-3.3.1/classes/res/wav/Shostakovich _waltz2_8bit.wav[0m
+[0m[[0m[0mdebug[0m] [0m[0m	res/images[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/mackerel/Desktop/connect4/target/scala-3.3.1/classes/res/images[0m
+[0m[[0m[0mdebug[0m] [0m[0m	res/images/isc_icon.png[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/mackerel/Desktop/connect4/target/scala-3.3.1/classes/res/images/isc_icon.png[0m
+[0m[[0m[0mdebug[0m] [0m[0m	res/images/hei-defr.png[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/mackerel/Desktop/connect4/target/scala-3.3.1/classes/res/images/hei-defr.png[0m
+[0m[[0m[0mdebug[0m] [0m[0m	res/images/retro-synthwave_GIF-00-2.gif[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/mackerel/Desktop/connect4/target/scala-3.3.1/classes/res/images/retro-synthwave_GIF-00-2.gif[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GUI.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/mackerel/Desktop/connect4/target/scala-3.3.1/classes/GUI.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Audio.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/mackerel/Desktop/connect4/target/scala-3.3.1/classes/Audio.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main$$anon$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/mackerel/Desktop/connect4/target/scala-3.3.1/classes/Main$$anon$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/mackerel/Desktop/connect4/target/scala-3.3.1/classes/Main.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Audio.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/mackerel/Desktop/connect4/target/scala-3.3.1/classes/Audio.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/mackerel/Desktop/connect4/target/scala-3.3.1/classes/Main.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GUI.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/mackerel/Desktop/connect4/target/scala-3.3.1/classes/GUI.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0mDone packaging.[0m

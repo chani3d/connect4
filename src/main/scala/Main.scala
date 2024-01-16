@@ -4,10 +4,12 @@ import java.awt.event.{KeyAdapter, KeyEvent}
 
 object Main extends App {
 
+  // Checks if the position is taken or not
   def checkPosition(board: Array[Array[Int]], column: Int): Boolean = {
     return board(0)(column) == 0
   }
-
+  
+  // Selects the next position available
   def nextPosition(board: Array[Array[Int]], column: Int): Int = {
     var n: Int = 0
     for (i <- board.indices) {
@@ -17,7 +19,7 @@ object Main extends App {
     }
     return n
   }
-
+  // Checks if the player has won (4 different checkings)
   def checkWin(board: Array[Array[Int]], token: Int, r: Int, c: Int): Boolean = {
     var check: Boolean = false
 
@@ -62,7 +64,7 @@ object Main extends App {
   var started: Boolean = false
   var interface: GUI = new GUI
 
-  // Sund variables
+  // Sound variables
   val mainMusic: Audio = new Audio("/res/wav/Shostakovich _waltz2_8bit.wav")
   val winEffect: Audio = new Audio("/res/wav/win.wav")
   val tokenEffect: Audio = new Audio("/res/wav/token.wav")
@@ -73,7 +75,6 @@ object Main extends App {
   interface.textPressStart(w, 150, 400)
 
   // Keyboard control
-
   w.setKeyManager(new KeyAdapter(){
     override def keyPressed(e: KeyEvent): Unit = {
       ok = true
@@ -104,7 +105,6 @@ object Main extends App {
       else ok = false
 
       // Start of the game
-      
       if (ok && !gameOver){
         if(turn % 2 == 0){
           ok = false

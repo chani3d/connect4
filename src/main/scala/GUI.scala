@@ -3,7 +3,8 @@ import hevs.graphics.utils.GraphicsBitmap
 import java.awt.Color
 
 class GUI {
- 
+
+  // This creates tthe layout of the board
   def createBoard(r: Int, c: Int, w: FunGraphics): Array[Array[Int]] = {
 
     //Visual stuff
@@ -21,6 +22,7 @@ class GUI {
     return board
   }
 
+  // Drops a token in the board
   def dropToken(board: Array[Array[Int]], row: Int, column: Int, token: Int, posx: Int, posy: Int, color: Color, w: FunGraphics): Unit = {
     w.setColor(color)
     w.drawFilledCircle(posx, posy, 90)
@@ -28,7 +30,8 @@ class GUI {
   }
 
   //Text functions
-
+  
+  // Main title displayed at the beginning of the game
   def textTitle(w: FunGraphics, player: String): Unit = {
     val hei_defr = new GraphicsBitmap("/res/images/hei-defr.png")
     val isc_icon = new GraphicsBitmap("/res/images/isc_icon.png")
